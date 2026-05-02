@@ -104,7 +104,7 @@ Views are published to `resources/views/vendor/zopen/`.
 
 | Requirement | Version                 |
 |-------------|-------------------------|
-| PHP         | ^8.2                    |
+| PHP         | ^8.3                    |
 | Laravel     | ^11.0 \| ^12.0 \| ^13.0 |
 
 ---

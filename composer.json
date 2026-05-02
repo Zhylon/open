@@ -1,0 +1,61 @@
+{
+  "name": "zhylon/open",
+  "description": "A small Laravel package that injects developer-facing messages into your application — HTML comments, console output, and a friendly hello to curious developers.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "zhylon",
+    "developer",
+    "open-source",
+    "easter-egg"
+  ],
+  "authors": [
+    {
+      "name": "Toby",
+      "email": "toby@zhylon.net",
+      "homepage": "https://zhylon.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "illuminate/http": "^11.0|^12.0|^13.0",
+    "illuminate/support": "^11.0|^12.0|^13.0",
+    "illuminate/view": "^11.0|^12.0|^13.0"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.0",
+    "orchestra/testbench": "^9.0|^10.0",
+    "pestphp/pest": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zhylon\\Open\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Zhylon\\Open\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zhylon\\Open\\OpenServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "format": "vendor/bin/pint"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

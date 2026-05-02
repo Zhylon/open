@@ -53,7 +53,7 @@
     }
   },
   "scripts": {
-    "test": "vendor/bin/pest",
+    "test": "vendor/bin/pest --no-cache",
     "format": "vendor/bin/pint"
   },
   "minimum-stability": "stable",
